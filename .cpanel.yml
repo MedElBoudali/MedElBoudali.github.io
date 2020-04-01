@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/user/reactapp.animelak.xyz/med
-    - /bin/cp * $DEPLOYPATH
