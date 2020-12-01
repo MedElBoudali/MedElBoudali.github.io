@@ -1,2 +1,2 @@
 <h5>Soon ...</h5></br>
-Demo <a href="https://medelboudali.github.io/">medelboudali.github.io</a>
+Demo <a href="elboudali.com">www.elboudali.com</a>
