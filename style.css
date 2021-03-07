@@ -4,21 +4,24 @@
 	--color1: #1a202c;
 	--color2: #ecc94b;
 	--color3: #fff;
-	--fontSize08: 0.8rem;
+	--fontSize08: 0.7rem;
 	--fontSize09: 0.9rem;
-	--fontSize1: 1rem;
+	--fontSize1: 0.8rem;
 	--fontSize11: 1.1rem;
 	--fontSize13: 1.3rem;
-	--fontSize2: 2rem;
-	--fontSier26: 2.6rem;
+	--fontSize2: 1.5rem;
+	--fontSize26: 2rem;
 	--fontSize3: 3rem;
 	--fontWeight2: 200;
 	--fontWeight3: 300;
 	--fontWeight4: 400;
-	--fontWeight5: 500;
+	--fontWeight5: 400;
 	--fontWeight6: 600;
-	--fontWeight7: 700;
+	--fontWeight7: 600;
 	--fontWeight9: 900;
+	--imageWH: 150px;
+	--gridW: 320px;
+	--imageW: 400px;
 }
 
 *,
@@ -95,7 +98,7 @@ header {
 }
 
 #logo h1 {
-	font-size: var(--fontSize3);
+	font-size: var(--fontSize2);
 	font-weight: var(--fontWeight9);
 	margin: 0;
 	user-select: none;
@@ -175,8 +178,8 @@ main {
 }
 
 #profile img {
-	height: 250px;
-	width: 250px;
+	height: var(--imageWH);
+	width: var(--imageWH);
 	border-radius: 50%;
 	object-fit: cover;
 }
@@ -191,7 +194,7 @@ main {
 
 #profile-header h1 {
 	color: var(--color2);
-	font-size: var(--fontSier26);
+	font-size: var(--fontSize26);
 	font-weight: var(--fontWeight5);
 	margin: 0;
 	padding: 0;
@@ -541,10 +544,9 @@ main {
 
 #projects-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 450px);
-	grid-gap: 28px;
+	grid-template-columns: repeat(auto-fit, var(--gridW));
 	justify-content: center;
-	width: 90%;
+	grid-gap: 28px;
 	margin: 0 auto;
 }
 
@@ -556,7 +558,7 @@ main {
 
 .project img {
 	width: 100%;
-	height: 400px;
+	height: var(--imageW);
 	object-fit: cover;
 	object-position: top;
 	border-top-left-radius: 7px;
@@ -692,6 +694,17 @@ hr {
 }
 
 @media (min-width: 900px) {
+	:root {
+		--fontSize08: 0.8rem;
+		--fontSize1: 1rem;
+		--fontSize2: 2rem;
+		--fontSier26: 2.6rem;
+		--fontWeight5: 500;
+		--fontWeight7: 700;
+		--imageWH: 250px;
+		--gridW: 480px;
+		--imageW: 200px;
+	}
 	header {
 		padding: 0 60px;
 		flex-direction: row;
@@ -723,5 +736,9 @@ hr {
 	#technologies-list,
 	#devops-list {
 		width: 80%;
+	}
+
+	#projects-list {
+		width: 90%;
 	}
 }
