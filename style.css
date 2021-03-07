@@ -21,7 +21,7 @@
 	--fontWeight9: 900;
 	--imageWH: 150px;
 	--gridW: 320px;
-	--imageW: 400px;
+	--imageW: 300px;
 }
 
 *,
@@ -703,7 +703,7 @@ hr {
 		--fontWeight7: 700;
 		--imageWH: 250px;
 		--gridW: 480px;
-		--imageW: 200px;
+		--imageW: 400px;
 	}
 	header {
 		padding: 0 60px;
